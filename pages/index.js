@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import clientPromise from '../lib/mongodb'
+import { Button } from 'rsuite'
+import SiteNavbar from '../components/SiteNavbar'
+import 'rsuite/dist/rsuite.min.css'
 
 export default function Home({ isConnected }) {
   return (
@@ -9,10 +12,16 @@ export default function Home({ isConnected }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <SiteNavbar />
+
       <main>
         <h1>
           Jnxvln Portfolio
         </h1>
+
+        <div>
+          <Button>Rsuite Button</Button>
+        </div>
 
         {isConnected ? (
           <span>Database CONNECTED</span>
@@ -24,7 +33,7 @@ export default function Home({ isConnected }) {
       </main>
 
       <footer>
-        Footer
+        <small>&copy; Copyright 2022 | Justin Cox <a href="https://github.com/Jnxvln" target="_blank" referrer="no-referrer">(GitHub @Jnxvln)</a></small>
       </footer>
 
       <style jsx>{`
