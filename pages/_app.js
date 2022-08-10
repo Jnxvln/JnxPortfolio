@@ -5,14 +5,22 @@ const MyApp = ({ Component, pageProps }) => {
     <Layout>
       <Component {...pageProps} />
 
+      {/* GLOBAL CSS STYLES */}
       <style jsx global>{`
+
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
         html,
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+          font-family: 'Lato', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
+          letter-spacing: .04rem;
+          font-size: 12pt;
+          font-weight: 400;
+          line-height: 1.6;
         }
 
         * {
@@ -22,6 +30,11 @@ const MyApp = ({ Component, pageProps }) => {
         {/* #region SITE NAVBAR */}
         #site-navbar {
           background-color: #303030;
+          font-size: 1rem;
+          position: fixed;
+          width: 100%;
+          z-index: 100;
+          top: 0;
         }
 
         #site-navbar a {

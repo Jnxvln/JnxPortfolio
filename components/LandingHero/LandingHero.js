@@ -20,6 +20,7 @@ const LandingHero = () => {
           height: 30em;
           background-image: url('https://cdn.pixabay.com/photo/2016/11/18/18/37/programming-1836330_1280.png');
           background-size: cover;
+          background-attachment: fixed;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -37,11 +38,12 @@ const LandingHero = () => {
           height: 100%;
           
           background: rgb(190,155,21);
-background: -moz-linear-gradient(140deg, rgba(190,155,21,1) 0%, rgba(82,6,13,1) 72%);
-background: -webkit-linear-gradient(140deg, rgba(190,155,21,1) 0%, rgba(82,6,13,1) 72%);
-background: linear-gradient(140deg, rgba(190,155,21,1) 0%, rgba(82,6,13,1) 72%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#be9b15",endColorstr="#52060d",GradientType=1);
+          background: -moz-linear-gradient(140deg, rgba(190,155,21,1) 0%, rgba(82,6,13,1) 72%);
+          background: -webkit-linear-gradient(140deg, rgba(190,155,21,1) 0%, rgba(82,6,13,1) 72%);
+          background: linear-gradient(140deg, rgba(190,155,21,1) 0%, rgba(82,6,13,1) 72%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#be9b15",endColorstr="#52060d",GradientType=1);
 
+          background-attachment: fixed;
           opacity: 0.7;
 
           @supports (mix-blend-mode: hue) {
