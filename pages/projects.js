@@ -26,13 +26,30 @@ const projects = ({ projects }) => {
 
 export async function getStaticProps () {
 
-  const res = await fetch('http://localhost:3000/api/projects') 
-  const projects = await res.json()
-
-  return {
-    props: {
-      projects
+  try {    
+    const res = await fetch('http://localhost:3000/api/projects') 
+    const projects = await res.json()
+  
+    if (projects) {
+      return {
+        props: {
+          projects
+        }
+      }
+    } else {
+      return {
+        props: {
+          projects: []
+        }
+      }
     }
+  } catch (error) {
+   console.error(error.message) 
+   return {
+    props: {
+      projects: []
+    }
+   }
   }
 
   
