@@ -4,8 +4,8 @@ const projects = ({ projects }) => {
   return (
     <div>
       <h1>Projects</h1>
-      { projects.map(project => (
-        <div>
+      { projects.map((project, index) => (
+        <div key={index}>
           <div style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>{project.name}</div>
           <ul style={{ margin: 0 }}>
             <li>Website: {project.url}</li>

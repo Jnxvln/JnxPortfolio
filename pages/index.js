@@ -1,60 +1,25 @@
-import Head from 'next/head'
 import clientPromise from '../lib/mongodb'
 import { Button } from 'rsuite'
-import SiteNavbar from '../components/SiteNavbar'
+import LandingHero from '../components/LandingHero/LandingHero'
 import 'rsuite/dist/rsuite.min.css'
 
 export default function Home({ isConnected }) {
   return (
-    <div>
-      <Head>
-        <title>Jnxvln Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <section>
+      <LandingHero />
 
-      <SiteNavbar />
+      <div>
+        <Button>Rsuite Button</Button>
+      </div>
 
-      <main>
-        <h1>
-          Jnxvln Portfolio
-        </h1>
-
-        <div>
-          <Button>Rsuite Button</Button>
-        </div>
-
-        {isConnected ? (
-          <span>Database CONNECTED</span>
-        ) : (
-          <span>
-            Database NOT CONNECTED
-          </span>
-        )}
-      </main>
-
-      <footer>
-        <small>&copy; Copyright 2022 | Justin Cox <a href="https://github.com/Jnxvln" target="_blank" referrer="no-referrer">(GitHub @Jnxvln)</a></small>
-      </footer>
-
-      <style jsx>{`
-          {/* CSS for index.js here */}
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+      {isConnected ? (
+        <span>Database CONNECTED</span>
+      ) : (
+        <span>
+          Database NOT CONNECTED
+        </span>
+      )}
+    </section>
   )
 }
 
