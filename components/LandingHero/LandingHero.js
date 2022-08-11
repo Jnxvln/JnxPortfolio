@@ -61,11 +61,11 @@ const LandingHero = () => {
 
         .hero-link {
           text-decoration: none;
-          color: white;
+          color: #F9C914;
         }
 
         .hero-link:hover {
-          color: #F9C914;
+          color: #FFD581;
         }
       `}</style>
     </section>

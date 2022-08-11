@@ -18,12 +18,17 @@ export default function Home({ isConnected }) {
             My name is Justin Cox, I am an aspiring web developer from Texas who enjoys creating modern websites for individuals and small businesses.
           </p>
           <p className="larger-text">
-            Technologies I use include HTML, JavaScript, CSS, React and Vue for my front-end needs. For back-end, I mainly use NodeJS and MongoDB.
+            Technologies I use include HTML, CSS, JavaScript, React and Vue for my front-end needs. For back-end, I primarily use NodeJS and MongoDB.
           </p>
 
           <div className="tech-stack">
             <img src="/logo_html.png" alt="HTML Logo" />
-            <div className="js-icon">Js</div>
+            <img src="/logo_css3.svg" alt="CSS Logo" />
+            <img src="/logo_javascript.svg" alt="JavaScript Logo" />
+            <img src="/logo_react.svg" alt="React Logo" />
+            <img src="/logo_vue.svg" alt="Vue Logo" />
+            <img src="/logo_nodejs.svg" alt="NodeJS Logo" />
+            <img src="/logo_mongodb.svg" alt="MongoDB Logo" />
           </div>
       </div>
       
@@ -50,7 +55,8 @@ export default function Home({ isConnected }) {
 
         .tech-stack img {
           border-radius: 100%;
-          max-width: 50px;
+          width: 50px;
+          height: 50px;
         }
 
         .js-icon {
