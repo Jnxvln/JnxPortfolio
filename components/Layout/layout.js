@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Footer from './Footer'
 
 const Layout = ({ children }) => {
-
   // styles for main html tag
   const styles = {
     // display: "flex",
@@ -17,14 +16,10 @@ const Layout = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header>
-        <SiteNavbar />
-      </header>
+      <header>{/* <SiteNavbar /> */}</header>
 
       <main>
-        <section>
-          { children }
-        </section>
+        <section>{children}</section>
       </main>
       <Footer />
     </>

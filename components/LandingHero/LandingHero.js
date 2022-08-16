@@ -5,12 +5,12 @@ const LandingHero = () => {
     <section className="hero">
       <div>
         <h1>Justin Cox</h1>
-        <h3 style={{ fontStyle: 'italic' }}>Web Developer</h3>
-        <br/>
+        <h2 style={{ fontStyle: 'italic' }}>Web Developer</h2>
+        <br />
         <h5>
-        <Link href="https://github.com/Jnxvln">
-          <a className="hero-link">@Jnxvln GitHub</a>
-        </Link>
+          <Link href="https://github.com/Jnxvln">
+            <a className="hero-link">@Jnxvln GitHub</a>
+          </Link>
         </h5>
       </div>
 
@@ -30,17 +30,29 @@ const LandingHero = () => {
         }
 
         .hero::after {
-          content: "";
+          content: '';
           position: absolute;
           top: 0;
           left: 0;
           width: 100%;
           height: 100%;
-          
-          background: rgb(190,155,21);
-          background: -moz-linear-gradient(140deg, rgba(190,155,21,1) 0%, rgba(82,6,13,1) 72%);
-          background: -webkit-linear-gradient(140deg, rgba(190,155,21,1) 0%, rgba(82,6,13,1) 72%);
-          background: linear-gradient(140deg, rgba(190,155,21,1) 0%, rgba(82,6,13,1) 72%);
+
+          background: rgb(190, 155, 21);
+          background: -moz-linear-gradient(
+            140deg,
+            rgba(190, 155, 21, 1) 0%,
+            rgba(82, 6, 13, 1) 72%
+          );
+          background: -webkit-linear-gradient(
+            140deg,
+            rgba(190, 155, 21, 1) 0%,
+            rgba(82, 6, 13, 1) 72%
+          );
+          background: linear-gradient(
+            140deg,
+            rgba(190, 155, 21, 1) 0%,
+            rgba(82, 6, 13, 1) 72%
+          );
           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#be9b15",endColorstr="#52060d",GradientType=1);
 
           background-attachment: fixed;
@@ -52,7 +64,6 @@ const LandingHero = () => {
             mix-blend-mode: hue;
             mix-blend-mode: hard-light;
           }
-          
         }
 
         .hero > * {
@@ -61,11 +72,26 @@ const LandingHero = () => {
 
         .hero-link {
           text-decoration: none;
-          color: #F9C914;
+          color: #f9c914;
         }
 
         .hero-link:hover {
-          color: #FFD581;
+          color: #ffe2a8;
+        }
+
+        .hero h1 {
+          font-size: 3.5rem;
+          margin: 0;
+        }
+
+        .hero h2 {
+          font-size: 2.1rem;
+          margin: 0;
+        }
+
+        .hero h5 {
+          font-size: 1rem;
+          margin: 0;
         }
       `}</style>
     </section>

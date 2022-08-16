@@ -1,7 +1,6 @@
 import LandingHero from '../components/LandingHero/LandingHero'
 import DatabaseStatus from '../components/DatabaseStatus/DatabaseStatus'
 import clientPromise from '../lib/mongodb'
-import 'rsuite/dist/rsuite.min.css'
 
 export default function Home({ isConnected }) {
   return (
@@ -14,24 +13,25 @@ export default function Home({ isConnected }) {
       </header>
 
       <div className="container" style={{ marginBottom: '4em' }}>
-          <p className="larger-text">
-            My name is Justin Cox, I am an aspiring web developer from Texas who enjoys creating modern websites for individuals and small businesses.
-          </p>
-          <p className="larger-text">
-            Technologies I use include HTML, CSS, JavaScript, React and Vue for my front-end needs. For back-end, I primarily use NodeJS and MongoDB.
-          </p>
+        <p className="larger-text">
+          My name is Justin Cox, I'm a self-taught web developer from Texarkana,
+          Texas seeking my first job as a Junior level programmer.
+        </p>
+        <p className="larger-text">
+          Technologies I use include HTML, CSS, JavaScript, React and Vue for my
+          front-end needs. For back-end, I primarily use NodeJS and MongoDB.
+        </p>
 
-          <div className="tech-stack">
-            <img src="/logo_html.png" alt="HTML Logo" />
-            <img src="/logo_css3.svg" alt="CSS Logo" />
-            <img src="/logo_javascript.svg" alt="JavaScript Logo" />
-            <img src="/logo_react.svg" alt="React Logo" />
-            <img src="/logo_vue.svg" alt="Vue Logo" />
-            <img src="/logo_nodejs.svg" alt="NodeJS Logo" />
-            <img src="/logo_mongodb.svg" alt="MongoDB Logo" />
-          </div>
+        <div className="tech-stack">
+          <img src="/logo_html.png" alt="HTML Logo" />
+          <img src="/logo_css3.svg" alt="CSS Logo" />
+          <img src="/logo_javascript.svg" alt="JavaScript Logo" />
+          <img src="/logo_react.svg" alt="React Logo" />
+          <img src="/logo_vue.svg" alt="Vue Logo" />
+          <img src="/logo_nodejs.svg" alt="NodeJS Logo" />
+          <img src="/logo_mongodb.svg" alt="MongoDB Logo" />
+        </div>
       </div>
-      
 
       <style jsx>{`
         .container {
@@ -64,7 +64,7 @@ export default function Home({ isConnected }) {
           width: 50px;
           font-weight: 900;
           color: black;
-          background-color: #F3DB2F;
+          background-color: #f3db2f;
           font-size: 20pt;
           text-align: center;
           padding: 0.1em 0;

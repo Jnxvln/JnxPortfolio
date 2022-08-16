@@ -1,21 +1,39 @@
 import React from 'react'
 import Link from 'next/link'
-import { Navbar, Nav } from 'rsuite';
-import HomeIcon from '@rsuite/icons/legacy/Home';
+import { Menubar } from 'primereact/menubar'
 
 const NavLink = React.forwardRef((props, ref) => {
-  const { as, href, ...rest } = props;
+  const { as, href, ...rest } = props
   return (
     <Link href={href} as={as}>
       <a ref={ref} {...rest} />
     </Link>
-  );
-});
+  )
+})
 
 const SiteNavbar = () => {
+  const items = [
+    {
+      label: 'File',
+      icon: 'pi pi-fw pi-file',
+    },
+    {
+      label: 'Delete',
+      icon: 'pi pi-fw pi-trash',
+    },
+    {
+      separator: true,
+    },
+    {
+      label: 'Export',
+      icon: 'pi pi-fw pi-external-link',
+    },
+  ]
+
   return (
     <div>
-      <Navbar id="site-navbar" appearance="ghost">
+      <Menubar model={items} />
+      {/* <Navbar id="site-navbar" appearance="ghost">
           <Navbar.Brand href="/">JNXVLN</Navbar.Brand>
           <Nav>
             <Nav.Item as={NavLink} href="/" icon={<HomeIcon />}>
@@ -35,10 +53,7 @@ const SiteNavbar = () => {
               <Nav.Item as={NavLink} href="/projects">NodeJS</Nav.Item>
             </Nav.Menu>
           </Nav>
-          {/* <Nav pullRight>
-            <Nav.Item icon={<CogIcon />}>Settings</Nav.Item>
-          </Nav> */}
-        </Navbar>
+        </Navbar> */}
     </div>
   )
 }

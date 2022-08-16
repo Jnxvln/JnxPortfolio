@@ -1,9 +1,17 @@
-
 const Footer = () => {
   return (
     <footer>
       <div>
-        <small>&copy; Copyright 2022 | Justin Cox <a href="https://github.com/Jnxvln" target="_blank" referrer="no-referrer">(GitHub @Jnxvln)</a></small>
+        <small>
+          &copy; Copyright 2022 | Justin Cox{' '}
+          <a
+            href="https://github.com/Jnxvln"
+            target="_blank"
+            referrer="no-referrer"
+          >
+            (GitHub @Jnxvln)
+          </a>
+        </small>
       </div>
 
       <style jsx>{`
@@ -15,7 +23,7 @@ const Footer = () => {
         }
 
         footer a {
-          color: #F9C914;
+          color: #f9c914;
         }
       `}</style>
     </footer>
