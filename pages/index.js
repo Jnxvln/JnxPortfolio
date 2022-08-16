@@ -6,10 +6,11 @@ export default function Home({ isConnected }) {
   return (
     <section>
       <LandingHero />
-      <DatabaseStatus isConnected={isConnected} />
+      
 
       <header className="container">
         <h2 style={{ marginTop: '2em' }}>Modern Web Development</h2>
+        <DatabaseStatus isConnected={isConnected} />
       </header>
 
       <div className="container" style={{ marginBottom: '4em' }}>

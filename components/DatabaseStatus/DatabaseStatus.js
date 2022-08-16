@@ -1,10 +1,12 @@
+import { Badge } from 'primereact/badge';
+
 export default function DatabaseStatus({ isConnected }) {
     return (
         <div style={{ position: 'fixed', top: '2%', left: '45%', zIndex: 100 }}>
             {isConnected ? (
-                <div color="green" content="DB Connected" />
+                <Badge severity="success" value="DB Connected" />
             ) : (
-                <div color="red" content="DB Disconnected" />
+                <Badge severity="danger" value="DB Disconnected" />
             )}
         </div>
     )
