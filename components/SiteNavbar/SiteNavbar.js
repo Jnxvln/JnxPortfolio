@@ -3,37 +3,37 @@ import Link from 'next/link'
 import { Menubar } from 'primereact/menubar'
 
 const NavLink = React.forwardRef((props, ref) => {
-  const { as, href, ...rest } = props
-  return (
-    <Link href={href} as={as}>
-      <a ref={ref} {...rest} />
-    </Link>
-  )
+   const { as, href, ...rest } = props
+   return (
+      <Link href={href} as={as}>
+         <a ref={ref} {...rest} />
+      </Link>
+   )
 })
 
 const SiteNavbar = () => {
-  const items = [
-    {
-      label: 'File',
-      icon: 'pi pi-fw pi-file',
-    },
-    {
-      label: 'Delete',
-      icon: 'pi pi-fw pi-trash',
-    },
-    {
-      separator: true,
-    },
-    {
-      label: 'Export',
-      icon: 'pi pi-fw pi-external-link',
-    },
-  ]
+   const items = [
+      {
+         label: 'File',
+         icon: 'pi pi-fw pi-file',
+      },
+      {
+         label: 'Delete',
+         icon: 'pi pi-fw pi-trash',
+      },
+      {
+         separator: true,
+      },
+      {
+         label: 'Export',
+         icon: 'pi pi-fw pi-external-link',
+      },
+   ]
 
-  return (
-    <div>
-      <Menubar model={items} />
-      {/* <Navbar id="site-navbar" appearance="ghost">
+   return (
+      <div>
+         <Menubar model={items} />
+         {/* <Navbar id="site-navbar" appearance="ghost">
           <Navbar.Brand href="/">JNXVLN</Navbar.Brand>
           <Nav>
             <Nav.Item as={NavLink} href="/" icon={<HomeIcon />}>
@@ -54,8 +54,8 @@ const SiteNavbar = () => {
             </Nav.Menu>
           </Nav>
         </Navbar> */}
-    </div>
-  )
+      </div>
+   )
 }
 
 export default SiteNavbar
