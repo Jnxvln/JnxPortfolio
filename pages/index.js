@@ -17,14 +17,14 @@ export default function Home({ isConnected }) {
 
                <div className="container">
                   <p>
-                     My name is Justin Cox, I'm a self-taught web developer from
-                     Texarkana, Texas seeking my first job as a Junior level
-                     programmer.
+                     My name is Justin Cox, I'm a self-taught programmer from
+                     Texarkana, Texas seeking my first job as a Junior level web
+                     developer.
                   </p>
                   <p>
                      Technologies I use include HTML, CSS, JavaScript, React and
-                     Vue for my front-end needs. For back-end, I primarily use
-                     NodeJS and MongoDB.
+                     Vue for my front-end needs, and primarily NodeJS and
+                     MongoDB for the back-end.
                   </p>
 
                   <TechStack />
@@ -46,6 +46,7 @@ export default function Home({ isConnected }) {
             .container .title {
                margin: 0;
                font-weight: 900;
+               font-size: 2rem;
             }
 
             .js-icon {

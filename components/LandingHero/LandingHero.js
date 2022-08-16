@@ -5,7 +5,7 @@ const LandingHero = () => {
       <section className="hero">
          <div>
             <h1>Justin Cox</h1>
-            <h2 style={{ fontStyle: 'italic' }}>Web Developer</h2>
+            <h2 style={{ fontStyle: 'italic' }}>Developer Portfolio</h2>
             <br />
             <h5>
                <Link href="https://github.com/Jnxvln">
