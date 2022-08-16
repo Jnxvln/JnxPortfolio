@@ -28,10 +28,6 @@ const MyApp = ({ Component, pageProps }) => {
             * {
                box-sizing: border-box;
             }
-
-             {
-               /* #region SITE NAVBAR */
-            }
             #site-navbar {
                background-color: #303030;
                font-size: 1rem;
@@ -55,8 +51,14 @@ const MyApp = ({ Component, pageProps }) => {
             a.rs-dropdown-item:hover {
                background-color: #353535 !important;
             }
-             {
-               /* #endregion */
+
+            .p-card {
+               transition: all 0.35s;
+            }
+
+            .p-card:hover {
+               background-color: #f3f3f3;
+               transition: all 0.35s;
             }
          `}</style>
       </Layout>
